@@ -36,12 +36,12 @@ class SimpleTabs extends React.Component {
           <Tabs className={classes.root} value={value} onChange={this.handleChange} centered textColor="primary" indicatorColor="primary">
             <Tab  label="Patient Details" href="#basic-tabs"/>
             <Tab  label="Doctor Details" href="#basic-tabs"/>
-            <Tab label="View Patient Examine Details" href="#basic-tabs" />
+            {/* <Tab label="View Patient Examine Details" href="#basic-tabs" /> */}
           </Tabs>
         </AppBar>
         {value === 0 && <OngoingEvents/>}
         {value === 1 && <UpcomingEvents/>}
-        {value === 2 && <DiscussionForum/>}
+        {/* {value === 2 && <DiscussionForum/>} */}
       </div>
     );
   }

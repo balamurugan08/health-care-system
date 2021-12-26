@@ -58,7 +58,7 @@ class DiscussionForum extends React.Component {
    const{allPosts} = this.state;
     return (
       <div className='App' style={{'margin-top':'36px'}}>
-        <DiscussionBoard posts={allPosts} onSubmit={this.submitPost} />
+        {/* <DiscussionBoard posts={allPosts} onSubmit={this.submitPost} /> */}
       </div>
     )
 
