@@ -27,31 +27,36 @@ class Login extends React.Component {
   };
 
   handleLogin = () => {
-    const { username, password } = this.state;
+    // const { username, password } = this.state;
     const {
       history: { push },
     } = this.props;
-    if (username === "" || password === "") {
-      this.setState({ shouldAlertDisplay: true });
-      return;
-    }
-    this.setState({ shouldAlertDisplay: false });
-    this.setState({ shouldLoginErrorDisplay: false });
-    const reqJson={
-      username:username,password:password
-    }
-    axios.post(eventBaseUrl,reqJson).then((res) => {
-     if(res.data)
-     {
-       localStorage.setItem("username",username)
-      push({
-        pathname: "/home",
-        username: username, 
-      });
-     }
-     if(!res.data){
-       this.setState({shouldLoginErrorDisplay: true})
-     }
+    // if (username === "" || password === "") {
+    //   this.setState({ shouldAlertDisplay: true });
+    //   return;
+    // }
+    // this.setState({ shouldAlertDisplay: false });
+    // this.setState({ shouldLoginErrorDisplay: false });
+    // const reqJson={
+    //   username:username,password:password
+    // }
+    // axios.post(eventBaseUrl,reqJson).then((res) => {
+    //  if(res.data)
+    //  {
+    //    localStorage.setItem("username",username)
+    //   push({
+    //     pathname: "/home",
+    //     username: username, 
+    //   });
+    //  }
+    //  if(!res.data){
+    //    this.setState({shouldLoginErrorDisplay: true})
+    //  }
+    // });
+
+    push({
+      pathname: "/home",
+      // username: username, 
     });
   };
 

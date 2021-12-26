@@ -34,9 +34,9 @@ class SimpleTabs extends React.Component {
       <div className={classes.root}>
         <AppBar position="static">
           <Tabs className={classes.root} value={value} onChange={this.handleChange} centered textColor="primary" indicatorColor="primary">
-            <Tab  label="Ongoing Events" href="#basic-tabs"/>
-            <Tab  label="Upcoming Events" href="#basic-tabs"/>
-            <Tab label="Discussion Forum" href="#basic-tabs" />
+            <Tab  label="Patient Details" href="#basic-tabs"/>
+            <Tab  label="Doctor Details" href="#basic-tabs"/>
+            <Tab label="View Patient Examine Details" href="#basic-tabs" />
           </Tabs>
         </AppBar>
         {value === 0 && <OngoingEvents/>}
