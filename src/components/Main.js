@@ -9,12 +9,12 @@ class Main extends React.Component {
   }
 
   componentWillMount() {
-    if (localStorage.getItem("username") === null) {
-      const {
-        history: { push },
-      } = this.props;
-      push("/");
-    }
+    // if (localStorage.getItem("username") === null) {
+    //   const {
+    //     history: { push },
+    //   } = this.props;
+    //   push("/");
+    // }
   }
 
   handleLogout = () => {
@@ -30,7 +30,7 @@ class Main extends React.Component {
       <div className="space-y-5 h-screen flex flex-col">
         <div className="flex justify-between items-center">
           <h2 className="text-4xl font-semibold text-blue-800">
-           HealthCare System
+           Health Care Blockchain System
           </h2>
           <button
             class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2 mt-2"

@@ -79,7 +79,7 @@ class PatientSignup extends React.Component {
       
     return (
       <div className="flex flex-col space-y-5 max-w-md mx-auto my-16 min-w-500">
-        <h2 className="text-4xl font-semibold text-blue-800">Signup</h2>
+        <h2 className="text-4xl font-semibold text-blue-500">Signup</h2>
         <TextField
           required
           id="outlined-username"
@@ -134,7 +134,7 @@ class PatientSignup extends React.Component {
         />
         
         <div className="flex items-center justify-between">
-          <Button variant="contained" onClick={this.handleSubmit}>
+          <Button variant="contained" style={{backgroundColor:'#2b82f6'}} onClick={this.handleSubmit}>
             Submit
           </Button>
           <div className="flex">
