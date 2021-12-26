@@ -8,7 +8,7 @@ import axios from "axios";
 
 const eventBaseUrl = "http://localhost:8080/user/register";
 
-class Signup extends React.Component {
+class PatientSignup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -84,7 +84,7 @@ class Signup extends React.Component {
           required
           id="outlined-username"
           value={username}
-          label="Doctor ID"
+          label="Patient ID"
           autoComplete="off"
           onChange={(e) => this.handleUsernameChange(e)}
         />
@@ -92,7 +92,7 @@ class Signup extends React.Component {
           required
           id="outlined-email"
           value={email}
-          label="Doctor Name"
+          label="Patient Name"
           onChange={(e) => this.handleEmailChange(e)}
         />
         <TextField
@@ -122,14 +122,14 @@ class Signup extends React.Component {
           
           id="outlined-phone"
           value={phoneNumber}
-          label="Doctor Specification"
+          label="Age"
           onChange={(e) => this.handlePhoneNumberChange(e)}
         />
         <TextField
           required
           id="outlined-phone"
           value={phoneNumber}
-          label="Doctor Address"
+          label="Patient Address"
           onChange={(e) => this.handlePhoneNumberChange(e)}
         />
         
@@ -156,4 +156,4 @@ class Signup extends React.Component {
   }
 }
 
-export default withRouter(Signup);
+export default withRouter(PatientSignup);
